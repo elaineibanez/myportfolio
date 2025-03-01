@@ -1,25 +1,36 @@
 import React from "react";
-import { FaEnvelope } from "react-icons/fa";
+import { FaEnvelope, FaPhone } from "react-icons/fa";
 import { motion } from "framer-motion";
 import "../App.css";
+import { Link } from "react-router-dom";
 import profileImage from "../images/me.png";
 import ecommerce from "../images/ecommerce.png";
 import movie from "../images/movie.png";
 import fitness from "../images/fitness.png";
-import { Link } from "react-router-dom";
+import html5 from "../images/logo-html5.png";
+import css3 from "../images/logo-css3.png";
+import bootstrap from "../images/logo-bootstrap.png";
+import javascript from "../images/logo-javascript.png";
+import mongodb from "../images/logo-mongodb.png";
+import expressjs from "../images/logo-expressjs.png";
+import react from "../images/logo-react.png";
+import nodejs from "../images/logo-nodejs.png";
+import git from "../images/logo-git.png";
+import postman from "../images/logo-postman.png";
+import sublime from "../images/logo-sublime.png";
 
 
 function Portfolio() {
   return (
     <div className="container">
       {/* Sidebar Navigation */}
-    <nav className="sidebar">
-      <ul>
-        <li><Link to="/">API</Link></li>
-        <li><Link to="/websites">Websites</Link></li>
-        <li><Link to="/tools">Tools</Link></li>
-      </ul>
-    </nav>
+      <nav className="sidebar">
+        <ul>
+          <li><Link to="/">API</Link></li>
+          <li><Link to="/websites">Websites</Link></li>
+          <li><Link to="/tools">Tools</Link></li>
+        </ul>
+      </nav>
 
       {/* Main Content */}
       <div className="content">
@@ -66,50 +77,72 @@ function Portfolio() {
             transition={{ duration: 1, delay: 1.2 }}
           >
             elaineibanez@gmail.com <FaEnvelope className="icon" />
+            (+63) 9151989058 <FaPhone className="icon" />
           </motion.p>
         </motion.div>
 
-
         {/* Right Panel - Portfolio Section */}
-        <div className="portfolio">
-        <h1 className="portfolio-title"> PORTFOLIO </h1>
-          <div className="portfolio-grid">
-            <motion.div className="portfolio-item large" whileHover={{ scale: 1.05 }}>
-              <h1> TECH STACK TOOLS </h1>
+        <div className="tech-stack">
+          <h1 className="tech-stack-title"> TECH STACK TOOLS </h1>
+          <div className="tech-stack-grid">
+            <motion.div className="tech-stack-item" whileHover={{ scale: 1.50  }}>
+              <img src={html5} alt="HTML" />
+              <h2>HTML</h2>
             </motion.div>
 
-            <motion.div className="portfolio-item small" id="ecom1" whileHover={{ scale: 2.00 }}>
-              <a href="https://documenter.getpostman.com/view/40126425/2sAYQgiUqL" target="_blank">
-                <img src={ecommerce} alt="E-commerce" />
-              </a>
+            <motion.div className="tech-stack-item" whileHover={{ scale: 1.50 }}>
+              <img src={css3} alt="CSS" />
+              <h2>CSS</h2>
             </motion.div>
 
-            <motion.div className="portfolio-item small purple" id="ecom2" whileHover={{ scale: 2.05 }}>
-              <a href="https://documenter.getpostman.com/view/40126425/2sAYdeMrhM" target="_blank">
-                <img src={movie} />
-              </a>
+            <motion.div className="tech-stack-item" whileHover={{ scale: 1.50 }}>
+              <img src={bootstrap} alt="CSS" />
+              <h2>BOOTSTRAP</h2>
             </motion.div>
 
-            <motion.div className="portfolio-item small dark" id="ecom3" whileHover={{ scale: 2.05 }}>
-              <a href="https://documenter.getpostman.com/view/40126425/2sAYdeMrhN" target="_blank">
-                <img src={fitness} />
-              </a>
+            <motion.div className="tech-stack-item" whileHover={{ scale: 1.50 }}>
+              <img src={javascript} alt="CSS" />
+              <h2>JAVASCRIPT</h2>
             </motion.div>
 
-            <motion.div className="portfolio-item ecommerce" whileHover={{ scale: 1.05 }}>
-              <h2>E - Commerce App API</h2>
+            <motion.div className="tech-stack-item" whileHover={{ scale: 1.50 }}>
+              <img src={mongodb} alt="CSS" />
+              <h2>MONGO DB</h2>
             </motion.div>
 
-            <motion.div className="portfolio-item movie" whileHover={{ scale: 1.05 }}>
-              <h2>Movie App API</h2>
+            <motion.div className="tech-stack-item" whileHover={{ scale: 1.50 }}>
+              <img src={expressjs} alt="CSS" />
+              <h2>EXPRESS JS</h2>
             </motion.div>
 
-            <motion.div className="portfolio-item fitness" whileHover={{ scale: 1.05 }}>
-              <h2>Fitness App API</h2>
+            <motion.div className="tech-stack-item" whileHover={{ scale: 1.50 }}>
+              <img src={react} alt="CSS" />
+              <h2>REACT</h2>
+            </motion.div>
+
+            <motion.div className="tech-stack-item" whileHover={{ scale: 1.50 }}>
+              <img src={nodejs} alt="CSS" />
+              <h2>NODE JS</h2>
+            </motion.div>
+
+            <motion.div className="tech-stack-item" whileHover={{ scale: 1.50 }}>
+              <img src={git} alt="CSS" />
+              <h2>GIT</h2>
+            </motion.div>
+
+            <motion.div className="tech-stack-item" whileHover={{ scale: 1.50 }}>
+              <img src={postman} alt="CSS" />
+              <h2>POSTMAN</h2>
+            </motion.div>
+
+            <motion.div className="tech-stack-item" whileHover={{ scale: 1.50 }}>
+              <img src={sublime} alt="CSS" />
+              <h2>SUBLIME</h2>
             </motion.div>
 
           </div>
         </div>
+
       </div>
     </div>
   );

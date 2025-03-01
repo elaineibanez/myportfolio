@@ -1,5 +1,5 @@
 import React from "react";
-import { FaEnvelope } from "react-icons/fa";
+import { FaEnvelope, FaPhone } from "react-icons/fa";
 import { motion } from "framer-motion";
 import "../App.css";
 import profileImage from "../images/me.png";
@@ -66,6 +66,7 @@ function Portfolio() {
             transition={{ duration: 1, delay: 1.2 }}
           >
             elaineibanez@gmail.com <FaEnvelope className="icon" />
+            (+63) 9151989058 <FaPhone className="icon" />
           </motion.p>
         </motion.div>
 
@@ -78,33 +79,33 @@ function Portfolio() {
               <h1> API PROJECTS </h1>
             </motion.div>
 
-            <motion.div className="portfolio-item small" id="ecom1" whileHover={{ scale: 2.00 }}>
+            <motion.div className="portfolio-item small" id="ecom1" whileHover={{ scale: 1.5 }}>
               <a href="https://documenter.getpostman.com/view/40126425/2sAYQgiUqL" target="_blank">
                 <img src={ecommerce} alt="E-commerce" />
               </a>
             </motion.div>
 
-            <motion.div className="portfolio-item small purple" id="ecom2" whileHover={{ scale: 2.05 }}>
+            <motion.div className="portfolio-item small purple" id="ecom2" whileHover={{ scale: 1.5 }}>
               <a href="https://documenter.getpostman.com/view/40126425/2sAYdeMrhM" target="_blank">
                 <img src={movie} />
               </a>
             </motion.div>
 
-            <motion.div className="portfolio-item small dark" id="ecom3" whileHover={{ scale: 2.05 }}>
+            <motion.div className="portfolio-item small dark" id="ecom3" whileHover={{ scale: 1.5 }}>
               <a href="https://documenter.getpostman.com/view/40126425/2sAYdeMrhN" target="_blank">
                 <img src={fitness} />
               </a>
             </motion.div>
 
-            <motion.div className="portfolio-item ecommerce" whileHover={{ scale: 1.05 }}>
+            <motion.div className="portfolio-item ecommerce">
               <h2>E - Commerce App API</h2>
             </motion.div>
 
-            <motion.div className="portfolio-item movie" whileHover={{ scale: 1.05 }}>
+            <motion.div className="portfolio-item movie">
               <h2>Movie App API</h2>
             </motion.div>
 
-            <motion.div className="portfolio-item fitness" whileHover={{ scale: 1.05 }}>
+            <motion.div className="portfolio-item fitness">
               <h2>Fitness App API</h2>
             </motion.div>
 

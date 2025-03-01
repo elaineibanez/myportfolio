@@ -99,7 +99,9 @@ body {
 .portfolio-item1 {
   margin-top: -25px;
   text-align: center;
+  border-radius: 10px;
 }
+
 
 /* Portfolio Grid */
 .portfolio-grid {
@@ -212,4 +214,56 @@ body {
 #ecom3, img {
   height: 200px;
   width: 290px;
+}
+
+/* Teck Stack Tools*/
+.tech-stack-image {
+  width: 100%;
+  max-width: 800px;
+  margin-top: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.tech-stack-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  justify-items: center;
+  align-items: center;
+}
+
+.tech-stack-item img {
+  width: 100px; /* Adjust as needed */
+  height: auto;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+.tech-stack-item {
+  background: white;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.tech-stack-item h2 {
+  margin-top: 10px;
+  font-size: 16px;
+  text-align: center;
+}
+
+.tech-stack-title {
+  padding: 18px;
+  grid-column: span 3;
+  position: relative;
+  background: #3f3f3f;
+  color: white;
+  border-radius: 10px;
+  text-align: center;
+  margin-top: 5px;
 }

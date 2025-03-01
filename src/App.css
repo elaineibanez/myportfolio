@@ -1,0 +1,215 @@
+
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* General Styles */
+body {
+  font-family: "Poppins", sans-serif;
+  background: url("./images/bg.jpg") no-repeat center center fixed;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Main Layout */
+.container {
+  display: flex;
+  background: white;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+  width: 95%;
+  height: 80vh;
+  margin-right: 5vw;
+  gap: 30px;
+}
+
+/* Left Side - Profile */
+.profile {
+  background: #3f3f3f;
+  color: white;
+  padding: 40px;
+  border-radius: 20px;
+  text-align: center;
+  max-width: 300px;
+  position: relative;
+}
+
+.profile-image {
+  width: 150px;
+  height: 170px;
+  border-radius: 10%;
+  margin-bottom: 20px;
+}
+
+.name {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.email {
+  font-size: 14px;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon {
+  margin-left: 5px;
+}
+
+.badge {
+  background: black;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 50px;
+  font-size: 12px;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Right Side - Portfolio */
+.portfolio {
+  flex: 1;
+
+}
+
+.portfolio-title {
+  font-size: 80px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 5px;
+
+}
+
+.portfolio-item1 {
+  margin-top: -25px;
+  text-align: center;
+}
+
+/* Portfolio Grid */
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+/* Portfolio Items */
+.portfolio-item {
+  background: white;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 17px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8);
+}
+
+.large {
+  grid-column: span 3;
+  position: relative;
+  background: #3f3f3f;
+  color: white;
+}
+
+.large img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 40px;
+  color: white;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 50%;
+}
+
+.small, .ecommerce {
+  color: black;
+}
+
+.purple, .movie {
+  color: black;
+}
+
+.dark, .fitness {
+  color: black;
+}
+
+/* Sidebar Navigation */
+.sidebar {
+  position: relative;
+  background: white;
+  padding: 20px;
+  border-right: 2px solid #eaeaea;
+  text-align: left;
+  width: 10%;
+
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  font-size: 40px;
+}
+
+.sidebar ul li {
+  margin: 10px 0;
+
+}
+
+.sidebar ul li a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+ 
+.sidebar ul li a:hover {
+  color: #907ad6;
+}
+
+/* Adjust Main Content Layout */
+.content {
+  display: flex;
+  gap: 30px;
+}
+
+/*Portfolio Item*/
+#ecom1, img {
+  height: 200px;
+  width: 290px;
+}
+
+#ecom2, img {
+  height: 200px;
+  width: 290px;
+}
+
+#ecom3, img {
+  height: 200px;
+  width: 290px;
+}
